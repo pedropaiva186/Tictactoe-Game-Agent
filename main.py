@@ -1,5 +1,5 @@
-import Tictactoe
+from Tictactoe import Tictactoe
 import Machine
 
-game = Tictactoe.Tictactoe('E', 'P')
+game = Tictactoe('X', 'O')
 game.interface()
