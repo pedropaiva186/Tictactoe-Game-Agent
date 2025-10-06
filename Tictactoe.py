@@ -80,6 +80,13 @@ class Tictactoe:
                     
         return spaces
     
+    def give_blank_space(self, pos : int):
+        if 0 > pos or pos > 8:
+            return
+        
+        self.table[int(pos / 3)][pos % 3] = " "
+        self.moves -= 1
+    
     def verify_victory(self) -> int:
         for row in self.table:
             if len(set(row)) == 1 and ' ' not in row:
